@@ -10,9 +10,10 @@ import {
   Keyboard,
   Image,
   View,
-  ViewPropTypes,
   StyleSheet
 } from 'react-native';
+
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
