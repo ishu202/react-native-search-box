@@ -10,7 +10,8 @@ import {
   Keyboard,
   Image,
   View,
-  StyleSheet
+  StyleSheet,
+  TextStyle,
 } from 'react-native';
 
 import { ViewPropTypes } from 'deprecated-react-native-prop-types';
@@ -542,17 +543,17 @@ Search.propTypes = {
     PropTypes.number,
     PropTypes.object,
     ViewPropTypes.style,
-    Text.propTypes.style
+    PropTypes.shape(TextStyle)
   ]),
   direction: PropTypes.oneOf(['ltr', 'rtl']),
   cancelButtonStyle: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.object,
     ViewPropTypes.style,
-    Text.propTypes.style,
+    PropTypes.shape(TextStyle),
   ]),
   onLayout: PropTypes.func,
-  cancelButtonTextStyle: Text.propTypes.style,
+  cancelButtonTextStyle: PropTypes.shape(TextStyle),
 
   cancelButtonViewStyle: PropTypes.oneOfType([PropTypes.object, ViewPropTypes.style]),
 
